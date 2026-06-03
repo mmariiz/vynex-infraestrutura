@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vynex Infraestrutura</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+background:#ffffff;
+color:#333;
+}
+
+header{
+background:linear-gradient(135deg,#b30000,#ff1a1a);
+color:white;
+padding:20px 8%;
+position:sticky;
+top:0;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:32px;
+font-weight:bold;
+letter-spacing:2px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+}
+
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero-content{
+animation:fadeIn 1.5s;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.hero p{
+font-size:22px;
+margin-top:15px;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:15px 30px;
+background:#ff1a1a;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+section{
+padding:80px 10%;
+}
+
+.titulo{
+text-align:center;
+color:#c40000;
+margin-bottom:40px;
+font-size:40px;
+}
+
+.sobre{
+text-align:center;
+font-size:18px;
+line-height:1.8;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+padding:25px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.3s;
+border-top:5px solid #c40000;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+color:#c40000;
+margin-bottom:10px;
+}
+
+.parcerias{
+background:#fff5f5;
+}
+
+.contato{
+text-align:center;
+background:#f5f5f5;
+border-radius:15px;
+padding:40px;
+}
+
+.contato p{
+margin:12px 0;
+font-size:18px;
+}
+
+footer{
+background:#b30000;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<div class="logo">VYNEX</div>
+
+<div class="menu">
+<a href="#sobre">Sobre</a>
+<a href="#servicos">Serviços</a>
+<a href="#parcerias">Parcerias</a>
+<a href="#contato">Contato</a>
+</div>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-content">
+<h1>Vynex Infraestrutura</h1>
+
+<p>
+Tecnologia, Segurança e Conectividade para sua empresa.
+</p>
+
+<a href="#contato" class="btn">Fale Conosco</a>
+</div>
+</section>
+
+<section id="sobre">
+
+<h2 class="titulo">Quem Somos</h2>
+
+<div class="sobre">
+A Vynex Infraestrutura é uma empresa especializada em soluções tecnológicas e infraestrutura de redes, oferecendo serviços modernos, seguros e eficientes para empresas. Nosso compromisso é conectar inovação, qualidade e tecnologia para garantir o melhor desempenho e segurança aos nossos clientes.
+</div>
+
+</section>
+
+<section id="servicos">
+
+<h2 class="titulo">Nossos Serviços</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Segurança Digital</h3>
+<p>Proteção de dados, monitoramento e soluções corporativas de segurança.</p>
+</div>
+
+<div class="card">
+<h3>Infraestrutura de Redes</h3>
+<p>Planejamento, instalação e gerenciamento de redes empresariais.</p>
+</div>
+
+<div class="card">
+<h3>Suporte Técnico</h3>
+<p>Atendimento especializado para garantir máxima eficiência dos sistemas.</p>
+</div>
+
+<div class="card">
+<h3>Manutenção</h3>
+<p>Serviços preventivos e corretivos para equipamentos e infraestrutura.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="parcerias" class="parcerias">
+
+<h2 class="titulo">Parcerias Estratégicas</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Cisco Systems</h3>
+<p>Líder mundial em redes, conectividade e segurança corporativa.</p>
+</div>
+
+<div class="card">
+<h3>SENAI</h3>
+<p>Capacitação profissional, inovação tecnológica e formação técnica.</p>
+</div>
+
+<div class="card">
+<h3>Prefeitura Municipal de São Paulo</h3>
+<p>Parcerias para desenvolvimento tecnológico e infraestrutura urbana.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contato">
+
+<h2 class="titulo">Contato</h2>
+
+<div class="contato">
+<p><strong>Email:</strong> Vynexnetwork@gmail.com</p>
+<p><strong>Telefone:</strong> (11) 3547-9810</p>
+<p><strong>WhatsApp:</strong> (11) 98357-4621</p>
+<p><strong>Cidade:</strong> São Paulo - SP</p>
+</div>
+
+</section>
+
+<footer>
+© 2026 Vynex Infraestrutura • Todos os direitos reservados
+</footer>
+
+</body>
+</html>
